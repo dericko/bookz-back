@@ -9,8 +9,6 @@ def hello_world():
         return "<p>Hello world</p>"
 
 
-
-
 @app.route("/books")
 def get_books():
         payload = {"list":"hardcover-fiction", "api-key": getenv("NYT_API_KEY") }
